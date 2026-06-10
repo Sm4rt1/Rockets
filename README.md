@@ -15,18 +15,6 @@
 
 ## Задача №1. Разведочный анализ (EDA)
 
-<a href="https://colab.research.google.com/github/DenisPyankov/All_Space_Missions_from_1957/blob/main/1.TASK1_EDA.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="200">
-</a>
-
-![График](images/1.1.png)
-![График](images/1.2.png)
-![График](images/1.3.png)
-![График](images/1.4.png)
-![График](images/1.5.png)
-![График](images/1.6.png)
-![График](images/1.7.png)
-
 **Ключевые выводы EDA:**
 - Среднемесячное число запусков — 5.7, медиана — 5.0. Зафиксировано 8 месяцев без единого запуска.
 - Ряд не содержит дубликатов и значимых пропусков; временная частота установлена как `MS` (начало месяца).
@@ -36,14 +24,6 @@
 ---
 
 ## Задача №2. Статистические методы прогнозирования
-
-<a href="https://colab.research.google.com/github/DenisPyankov/All_Space_Missions_from_1957/blob/main/2.TASK_statsforecast.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="200">
-</a>
-
-![График](images/2.1.png)
-![График](images/2.2.png)
-![График](images/2.3.png)
 
 Сравнены 7 методов: бейзлайны (Naive, SeasonalNaive), ручная SARIMA, автоматические (AutoARIMA, AutoETS, AutoTheta) и Prophet.
 
@@ -90,13 +70,6 @@
 
 ## Задача №3. ML и DL методы (Data‑driven)
 
-<a href="https://colab.research.google.com/github/DenisPyankov/All_Space_Missions_from_1957/blob/main/3.TASK3_3ML_3DL.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="200">
-</a>
-
-![График](images/3.1.png)
-![График](images/3.2.png)
-
 **ML-модели** (LinearRegression, RandomForest, XGBoost) обучались с расширенным feature engineering (лаги, скользящие статистики, календарные признаки) через `mlforecast`.  
 **DL-модели** (LSTM, NBEATS, NHITS) обучались непосредственно на ряде через `NeuralForecast`.
 
@@ -140,11 +113,6 @@
 ---
 
 ## Задача №4. Итоговый пайплайн
-
-<a href="https://colab.research.google.com/github/DenisPyankov/All_Space_Missions_from_1957/blob/main/4.TASK4_pipeline.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="200">
-</a>
-
 ### Архитектура пайплайна
 
 1. Загрузка данных → агрегация в месячный ряд.
