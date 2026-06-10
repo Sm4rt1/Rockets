@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+xgboost
+mlforecast
+statsforecast
+neuralforecast
+torch
+pytorch-lightning
+scipy
+statsmodels
+scikit-learn
